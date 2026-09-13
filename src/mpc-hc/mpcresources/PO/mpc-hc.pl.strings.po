@@ -654,6 +654,10 @@ msgctxt "IDD_FILEMEDIAINFO"
 msgid "MediaInfo"
 msgstr "MediaInfo"
 
+msgctxt "IDD_MKVMETADATA"
+msgid "MKV Metadata"
+msgstr ""
+
 msgctxt "IDD_PPAGECAPTURE"
 msgid "Playback::Capture"
 msgstr "Odtwarzanie::Przechwytywanie"
