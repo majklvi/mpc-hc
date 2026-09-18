@@ -62,6 +62,7 @@ class CFullscreenWnd;
 struct DisplayMode;
 enum MpcCaptionState;
 class CMediaTypesDlg;
+class RarEntrySelectorDialog;
 
 interface IDSMChapterBag;
 interface IGraphBuilder2;
@@ -460,6 +461,7 @@ private:
     void AddTextPassThruFilter();
 
     int m_nLoops;
+    bool m_bKeepLoopCountOnStop = false; // set before a skip that closes the file, so OnPlayStop keeps m_nLoops
     ABRepeat abRepeat, reloadABRepeat;
     UINT m_nLastSkipDirection;
 
@@ -658,6 +660,7 @@ protected:
 
     CCritSec lockModalDialog;
     CMediaTypesDlg* mediaTypesErrorDlg;
+    RarEntrySelectorDialog* rarEntrySelectorDlg;
     void ShowMediaTypesDialog();
 
     void OpenCreateGraphObject(OpenMediaData* pOMD);
